@@ -6,6 +6,9 @@ TOKENIZER_NAME=VietAI/vit5-large
 DATASET_FOLDER=./data/UIT-ViQuAD
 OUTPUT_DIR=./models/$(date +%Y%m%d_%H%M%S)/output
 LOGGING_DIR=$OUTPUT_DIR/log
+QUESTION_PREFIX="câu hỏi: "
+ANSWER_PREFIX="đáp án: "
+CONTEXT_PREFIX="tài liệu: "
 
 # Training
 BATCHSIZE=4
@@ -31,6 +34,9 @@ python src/run_qg.py \
   --dataset_folder $DATASET_FOLDER \
   --do_train \
   --do_eval \
+  --question_prefix $QUESTION_PREFIX \
+  --context_prefix $CONTEXT_PREFIX \
+  --answer_prefix $ANSWER_PREFIX \
   --per_device_train_batch_size $BATCHSIZE \
   --learning_rate $LR \
   --num_train_epochs $N_EPOCHS \
