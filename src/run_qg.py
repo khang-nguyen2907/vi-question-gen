@@ -521,10 +521,10 @@ def main():
         answers = examples[answer_column]
 
         def generate_input(_answer, _context): 
-            return " ".join([answer_prefix, _answer.lstrip(), context_prefix, _context.lstrip()])
+            return " ".join([answer_prefix, _answer.lstrip(), context_prefix, _context.lstrip(), "</s>"])
 
         inputs = [generate_input(answer["text"][0], context) for answer, context in zip(answers, contexts)]
-        targets = [question for question in questions]
+        targets = [question + " </s>" for question in questions]
         return inputs, targets
     
     def preprocess_function(examples):
