@@ -523,7 +523,7 @@ def main():
         def generate_input(_answer, _context): 
             return " ".join([answer_prefix, _answer.lstrip(), context_prefix, _context.lstrip()])
 
-        inputs = [generate_input(answer, context) for answer, context in zip(answers, contexts)]
+        inputs = [generate_input(answer["text"][0], context) for answer, context in zip(answers, contexts)]
         targets = [question for question in questions]
         return inputs, targets
     
