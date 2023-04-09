@@ -238,13 +238,13 @@ class DataTrainingArguments:
         },
     )
     question_prefix: Optional[str] = field(
-        default="", metadata={"help": "A prefix to add before every source text, indicate this is a question (useful for T5 models)."}
+        default="câu hỏi: ", metadata={"help": "A prefix to add before every source text, indicate this is a question (useful for T5 models)."}
     )
     context_prefix: Optional[str] = field(
-        default="", metadata={"help": "A prefix to add before every source text, indicate this is a context (useful for T5 models)."}
+        default="tài liệu: ", metadata={"help": "A prefix to add before every source text, indicate this is a context (useful for T5 models)."}
     )
     answer_prefix: Optional[str] = field(
-        default="", metadata={"help": "A prefix to add before every source text. indicate this is a answer (useful for T5 models)."}
+        default="đáp án: ", metadata={"help": "A prefix to add before every source text. indicate this is a answer (useful for T5 models)."}
     )
 
     forced_bos_token: Optional[str] = field(

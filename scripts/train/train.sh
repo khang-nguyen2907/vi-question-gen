@@ -35,9 +35,6 @@ python src/run_qg.py \
   --do_train \
   --do_eval \
   --predict_with_generate \
-  --question_prefix $QUESTION_PREFIX \
-  --context_prefix $CONTEXT_PREFIX \
-  --answer_prefix $ANSWER_PREFIX \
   --per_device_train_batch_size $BATCHSIZE \
   --learning_rate $LR \
   --num_train_epochs $N_EPOCHS \
