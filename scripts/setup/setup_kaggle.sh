@@ -8,4 +8,5 @@ pip install -U transformers
 pip install -U datasets
 pip install -U SentencePiece
 pip install -U evaluate
+pip install -U rouge_score
 pip install -U tensorboard
