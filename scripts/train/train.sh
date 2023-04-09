@@ -11,7 +11,7 @@ ANSWER_PREFIX="đáp án: "
 CONTEXT_PREFIX="tài liệu: "
 
 # Training
-BATCHSIZE=4
+BATCHSIZE=8
 LR=1e-5
 N_EPOCHS=20
 MAX_SEQ_LENGTH=512
@@ -34,6 +34,7 @@ python src/run_qg.py \
   --dataset_folder $DATASET_FOLDER \
   --do_train \
   --do_eval \
+  --predict_with_generate \
   --question_prefix $QUESTION_PREFIX \
   --context_prefix $CONTEXT_PREFIX \
   --answer_prefix $ANSWER_PREFIX \
