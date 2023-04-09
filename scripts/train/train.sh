@@ -1,6 +1,6 @@
 # Model
-MODEL_NAME_OR_PATH=VietAI/vit5-large
-TOKENIZER_NAME=VietAI/vit5-large
+MODEL_NAME_OR_PATH=VietAI/vit5-base
+TOKENIZER_NAME=VietAI/vit5-base
 
 # Data
 DATASET_FOLDER=./data/UIT-ViQuAD
