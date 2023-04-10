@@ -4,3 +4,4 @@ SentencePiece
 evaluate
 rouge_score
 tensorboard
+ray[tune]
