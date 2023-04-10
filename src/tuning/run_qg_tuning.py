@@ -278,9 +278,11 @@ class DataTrainingArguments:
         },
     )
     local_tuning_dir: str = field(
+        default="tuner/",
         metadata={"help": "directory to contain tuning information"}
     )
     name_tuning_exp: str = field(
+        default="tuner_exp",
         metadata={"help": "name of tuning experiment"}
     )
 
