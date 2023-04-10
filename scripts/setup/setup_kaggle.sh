@@ -11,3 +11,4 @@ pip install -U SentencePiece
 pip install -U evaluate
 pip install -U rouge_score
 pip install -U tensorboard
+pip install ray[tune]
