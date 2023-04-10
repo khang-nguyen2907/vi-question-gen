@@ -3,6 +3,7 @@ mkdir data
 gdown https://drive.google.com/drive/folders/1BSnqdV7qewebo_30nV4ix_ARss7APfUP -O data/UIT-ViQuAD --folder 
 
 mkdir models
+mkdir tuner 
 
 pip install -U transformers
 pip install -U datasets
