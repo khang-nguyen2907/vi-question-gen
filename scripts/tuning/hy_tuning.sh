@@ -34,7 +34,7 @@ GPUS_PER_TRIAL=2
 LOCAL_TUNING_DIR=./tuner/$(date +%Y%m%d_%H%M%S)/output
 NAME_TUNING_EXP=$(date +%Y%m%d_%H%M%S)_tuner
 
-python src/run_qg.py \
+python src/tuning/run_qg_tuning.py \
   --model_name_or_path $MODEL_NAME_OR_PATH \
   --tokenizer_name $TOKENIZER_NAME \
   --dataset_folder $DATASET_FOLDER \

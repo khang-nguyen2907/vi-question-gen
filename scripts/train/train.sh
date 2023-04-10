@@ -28,7 +28,7 @@ EVAL_STEPS=100
 LOGGING_STEPS=100
 REPORT_TO=tensorboard
 
-python src/run_qg.py \
+python src/train/run_qg.py \
   --model_name_or_path $MODEL_NAME_OR_PATH \
   --tokenizer_name $TOKENIZER_NAME \
   --dataset_folder $DATASET_FOLDER \
